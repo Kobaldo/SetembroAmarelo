@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Frase Aleatória</title>
+    <title>Setembro Amarelo</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <!DOCTYPE html>
@@ -11,23 +11,27 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #FF8C42; /* Cor de fundo laranja */
-            color: #4B0082; /* Cor do texto roxo */
+            background-color: #643494; /* Cor de fundo Roxo */
+            color: #fc8304; /* Cor do texto laranja */
             margin: 0;
             padding: 0;
         }
 
         h1 {
-            color: #4B0082; /* Cor do título roxo */
+            color: #fc8304; /* Cor do título laranja */
+        }
+        h2 {
+           color: #fc8304; /* Cor do título laranja */  
         }
 
         /* Adicione aqui as regras CSS específicas para o seu projeto */
     </style>
 </head>
 <body>
-    <h1>Frase Aleatória</h1>
+    <h1>Setembro Amarelo Proz</h1>
+    <h2>Combate ao suícidio</h2>
     <p id="fraseAleatoria"></p>
-    <button id="gerarFrase">Gerar Nova Frase</button>
+    <button id="gerarFrase">Receba informações ou frases de apoio</button>
 
     <script>
         // Vetor de frases
@@ -40,14 +44,8 @@
         function gerarFraseAleatoria() {
             // Gera um número aleatório entre 0 e 99 (100 posições)
             var indiceAleatorio = Math.floor(Math.random() * 2);
-
-            // Verifica se o índice gerado é válido
-            if (indiceAleatorio >= 0 && indiceAleatorio < 100) {
                 var fraseAleatoriaElement = document.getElementById("fraseAleatoria");
-                fraseAleatoriaElement.textContent = "Frase Aleatória: " + frases[indiceAleatorio];
-            } else {
-                console.log("Índice gerado é inválido.");
-            }
+                fraseAleatoriaElement.textContent = frases[indiceAleatorio];
         }
 
         // Associa a função ao evento de clique do botão
