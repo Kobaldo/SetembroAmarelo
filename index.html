@@ -19,9 +19,11 @@
 
         h1 {
             color: #fc8304; /* Cor do título laranja */
+	    font-size: 4vw;
         }
         h2 {
            color: #fc8304; /* Cor do título laranja */  
+	   font-size: 3.2vw;
         }
 
 .button-52 {
@@ -74,19 +76,20 @@
     <script>
         // Vetor de frases
         var frases = new Array(100);
-        frases[0] = "Esta é a primeira frase.";
-        frases[1] = "Aqui está outra frase.";
+	frases[0] = "";
+        frases[1] = "Esta é a primeira frase.";
+        frases[2] = "Aqui está outra frase.";
         // ... Adicione mais frases, se desejar ...
 
        // Função para gerar uma frase aleatória
         function gerarFraseAleatoria() {
             // Gera um número aleatório entre 0 e 99 (100 posições)
-            var indiceAleatorio = Math.floor(Math.random() * 2);
+            var indiceAleatorio = Math.floor(Math.random() * 3);
 
             // Verifica se o índice gerado é válido
             if (indiceAleatorio >= 0 && indiceAleatorio < 100) {
                 var fraseAleatoriaElement = document.getElementById("fraseAleatoria");
-                fraseAleatoriaElement.textContent = "Frase Aleatória: " + frases[indiceAleatorio];
+                fraseAleatoriaElement.textContent = frases[indiceAleatorio];
             } else {
                 console.log("Índice gerado é inválido.");
             }
