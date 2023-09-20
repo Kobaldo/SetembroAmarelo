@@ -67,9 +67,9 @@
 </head>
 <body>
     <h1>Setembro Amarelo Proz</h1>
-    <h2>Combate ao suícidio</h2>
+    <h2>Juntos contra o suícidio</h2>
     <p id="fraseAleatoria"></p>
-    <button class="button-52" role="button">Receba informações ou frases de apoio</button>
+    <button class="button-52" role="button">Clique para receber informações e frases de apoio</button>
 
     <script>
         // Vetor de frases
@@ -78,12 +78,18 @@
         frases[1] = "Aqui está outra frase.";
         // ... Adicione mais frases, se desejar ...
 
-        // Função para gerar uma frase aleatória
+       // Função para gerar uma frase aleatória
         function gerarFraseAleatoria() {
             // Gera um número aleatório entre 0 e 99 (100 posições)
             var indiceAleatorio = Math.floor(Math.random() * 2);
+
+            // Verifica se o índice gerado é válido
+            if (indiceAleatorio >= 0 && indiceAleatorio < 100) {
                 var fraseAleatoriaElement = document.getElementById("fraseAleatoria");
-                fraseAleatoriaElement.textContent = frases[indiceAleatorio];
+                fraseAleatoriaElement.textContent = "Frase Aleatória: " + frases[indiceAleatorio];
+            } else {
+                console.log("Índice gerado é inválido.");
+            }
         }
 
         // Associa a função ao evento de clique do botão
