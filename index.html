@@ -382,14 +382,24 @@ frases[304] = "Se você nasceu com fraqueza, você também tem forças para leva
 frases[305] = "Todo jardineiro tem problemas com sua flor, mas nunca desiste dela, não desista da sua vida";
 frases[306] = "Vai desistir por quê? A vida foi feita para viver!";
 frases[307] = "A vida não é um mar de rosas, não mergulhe, peça ajuda";
+frases[308]= "Durante o Setembro Amarelo, enfatizamos que a esperança e o apoio têm o poder de iluminar a escuridão da depressão.";
+frases[309]= "Você é mais resiliente do que imagina. No Setembro Amarelo, recordamos que buscar ajuda é um ato de coragem, não de fraqueza.";
+frases[310]= "A vida é um tesouro precioso. No Setembro Amarelo, iremos reunir forças para oferecer ajuda a quem mais necessita.";
+frases[311]= "O Setembro Amarelo nos lembra da importância de dialogar sobre saúde mental como um passo vital para seguir adiante.";
+frases[312]= "A prevenção do suicídio começa com compreensão e apoio. Vamos espalhar empatia durante o Setembro Amarelo.";
+frases[313]= "No Setembro Amarelo, recordamos que o amor e o suporte da família e amigos podem salvar vidas.";
+frases[314]= "Você é valioso, e sua vida tem um propósito. Mantenhamos isso presente durante o Setembro Amarelo.";
+frases[315]= "A prevenção do suicídio começa com a conscientização. No Setembro Amarelo, vamos aprender sobre os sinais de alerta.";
+frases[316]= "A escuridão é passageira. Durante o Setembro Amarelo, compartilhamos a mensagem de esperança e recuperação.";
+frases[317]= "No Setembro Amarelo, lembramos que todos merecem ajuda e apoio. Você não está sozinho.";
 
        // Função para gerar uma frase aleatória
         function gerarFraseAleatoria() {
             // Gera um número aleatório entre 0 e 99 (100 posições)
-            var indiceAleatorio = Math.floor(Math.random() * 307);
+            var indiceAleatorio = Math.floor(Math.random() * 317);
 
             // Verifica se o índice gerado é válido
-            if (indiceAleatorio >= 0 && indiceAleatorio <= 307) {
+            if (indiceAleatorio >= 0 && indiceAleatorio <= 317) {
                 var fraseAleatoriaElement = document.getElementById("fraseAleatoria");
                 fraseAleatoriaElement.textContent = frases[indiceAleatorio];
             } else {
