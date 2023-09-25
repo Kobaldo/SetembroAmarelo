@@ -352,14 +352,44 @@ frases[273] ="Por tudo que você já passou de ruim ,não se entristessa porque 
 frases[274] = "Por mais difíceis que possam ser as barreiras e obstáculos que você tem na vida , vale a pena viver ";
 frases[275] ="Já parou pra observar todas as maravilhas em sua volta ??As flores ,os pássaros, a água ,o céu ....e com tudo o Ar em que você respira  todos os dias ?Pois é tudo isso Deus te dá todas as  manhã valorize ";
 frases[276] =" Não tire a coisa mais importante que você tem não vale  a pena , pois a vida  ela é única ";
+frases[277] = " Escolha ser feliz, faça o'que você ama.";
+frases[278] = " Você é mais forte do que você pensa.";
+frases[279] = " Acredite em você";
+frases[280] = " Sua vida é preciosa, Deus te ama.";
+frases[281] = " Ocupe sua mente com coisas boas.";
+frases[282] = " Não pare de sonhar.";
+frases[283] = " Sua família te ama";
+frases[284] = " Sempre um passo de cada vez, tenha fé você vai vencer";
+frases[285] = " A vida é feita de vitórias e derrotas, tenha fé suas vitórias vão chegar.";
+frases[286] = " Não Desista, Persista.";
+frases[287] = "A tempestade pode ser intensa, mas o sol sempre volta a brilhar.";
+frases[289] = "Sua história ainda não chegou ao fim. Há muitas páginas em branco esperando para serem preenchidas.";
+frases[290] = "Cada novo amanhecer é uma oportunidade de recomeçar.";
+frases[291] = "Você é mais forte do que imagina. Supere um dia de cada vez.";
+frases[292] = "Compartilhe sua dor com alguém de confiança. Às vezes, a simples expressão de sentimentos ajuda muito."
+frases[293] = ""O futuro reserva surpresas incríveis para aqueles que têm a coragem de continuar.";
+frases[294] = "A vida é feita de altos e baixos. Os momentos difíceis não duram para sempre.";
+frases[295] = "Você é valioso(a) e merece amor e apoio. Não hesite em buscar ajuda profissional quando precisar.";
+frases[296] = "Cada desafio que você supera torna você mais resiliente.";
+frases[297] = "A esperança é uma luz que nunca se apaga. Mantenha-a acesa.";
+frases[298] = "Pense que sua vida são iguais girassóis de Van Gogh, uma arte inigualável que não morre";
+frases[299] = "O amor próprio também é um auto cuidado, preze pela sua vida";
+frases[300] = "Diga não ao suicídio, isso pode destruir tanto você, quanto sua família";
+frases[301] = "Pedir ajuda não é sinal de fraqueza, mas sim de força";
+frases[302] = "Não importa o que está vivendo, não desista, que você colherá bons frutos";
+frases[303] = "Se o mundo te faz cansar, pare e descanse, mas não pare de lutar";
+frases[304] = "Se você nasceu com fraqueza, você também tem forças para levantar-se";
+frases[305] = "Todo jardineiro tem problemas com sua flor, mas nunca desiste dela, não desista da sua vida";
+frases[306] = "Vai desistir por quê? A vida foi feita para viver!";
+frases[307] = "A vida não é um mar de rosas, não mergulhe, peça ajuda";
 
        // Função para gerar uma frase aleatória
         function gerarFraseAleatoria() {
             // Gera um número aleatório entre 0 e 99 (100 posições)
-            var indiceAleatorio = Math.floor(Math.random() * 137);
+            var indiceAleatorio = Math.floor(Math.random() * 307);
 
             // Verifica se o índice gerado é válido
-            if (indiceAleatorio >= 0 && indiceAleatorio < 200) {
+            if (indiceAleatorio >= 0 && indiceAleatorio <= 307) {
                 var fraseAleatoriaElement = document.getElementById("fraseAleatoria");
                 fraseAleatoriaElement.textContent = frases[indiceAleatorio];
             } else {
