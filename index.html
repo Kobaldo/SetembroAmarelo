@@ -82,7 +82,7 @@
 
     <script>
         // Vetor de frases
-        var frases = new Array(200);
+        var frases = new Array(400);
 
 frases[0] = "Não é drama não é para chamar atenção, nem é falta de Deus e muito menos frescura.";
 frases[1] = "Você não está sozinho. Há pessoas que se importam com você e estão dispostas a ajudar.";
@@ -420,10 +420,10 @@ frases[341]="Se você está se sentindo perdido, peça ajuda; há pessoas dispos
        // Função para gerar uma frase aleatória
         function gerarFraseAleatoria() {
             // Gera um número aleatório entre 0 e 99 (100 posições)
-            var indiceAleatorio = Math.floor(Math.random() * 331);
+            var indiceAleatorio = Math.floor(Math.random() * 341);
 
             // Verifica se o índice gerado é válido
-            if (indiceAleatorio >= 0 && indiceAleatorio <= 331) {
+            if (indiceAleatorio >= 0 && indiceAleatorio <= 341) {
                 var fraseAleatoriaElement = document.getElementById("fraseAleatoria");
                 fraseAleatoriaElement.textContent = frases[indiceAleatorio];
             } else {
